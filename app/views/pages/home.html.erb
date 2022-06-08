@@ -6,13 +6,17 @@
 	</div>
 	<div class="projects-container">
 		<h4 class="text-accent text-md font-bold mb-5">Things I've done</h4>
-		<div class="card-project">
-			<h3 class="text-3xl font-bold mb-3">MAAVENS</h3>
-			<p class="text-sm">Product recommendations from people you trust</p>
-		</div>
-		<div class="card-project">
-			<h3 class="text-3xl font-bold mb-3">UI Kit</h3>
-			<p class="text-sm">Component and layouts for you to build on.</p>
-		</div>
+		<%= link_to project_maavens_path do %>
+			<div class="card-project">
+				<h3 class="text-3xl font-bold mb-3">MAAVENS</h3>
+				<p class="text-sm">Product recommendations from people you trust</p>
+			</div>
+		<% end %>
+		<%= link_to project_ui_kit_path do %>
+			<div class="card-project">
+				<h3 class="text-3xl font-bold mb-3">UI Kit</h3>
+				<p class="text-sm">Component and layouts for you to build on.</p>
+			</div>
+		<% end %>
 	</div>
 </div>

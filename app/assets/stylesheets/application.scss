@@ -12,3 +12,12 @@
 @import "components/index";
 @import "pages/index";
 @import "layouts/index";
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: inherit;
+}
