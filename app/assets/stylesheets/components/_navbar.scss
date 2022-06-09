@@ -1,6 +1,5 @@
 .navbar-custom {
   justify-content: space-between;
-  background: white;
 }
 
 .navbar-custom .navbar-collapse {
@@ -9,4 +8,12 @@
 
 .navbar-custom .navbar-brand img {
   width: 40px;
+}
+
+.navbar-bg-white {
+  background: white;
+}
+
+.navbar-bg-grey {
+  background: #F4F4F4;
 }
