@@ -18,16 +18,17 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title font-bold" id="contactModalLabel">Looking forward to connecting!</h4>
+        <div class="mx-3"></div>
+        <h4 class="modal-title" id="contactModalLabel">🤗</h4>
         <button type="button" class="btn btn-x" data-bs-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <%= form_with url: messages_path, local: true do |form| %>
         <div class="modal-body">
-          <h5 class="font-bold">Email me at:</h5>
+          <h5 class="mb-3 font-bold">Email me at</h5>
           <p class="mb-5">jessie.baxter29@gmail.com</p>
-          <h5 class="font-bold">Or send me a message directly:</h5>
+          <h5 class="mb-3 font-bold">Or send me a message directly</h5>
           <div class="row">
             <div class="col-xs-12 col-sm-6">
               <div class="form-group mb-2">
