@@ -15,36 +15,3 @@ $body-font: 'Libre Baskerville', serif;
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
-
-.text-4xl {
-	font-size: 4rem;
-	line-height: 2.5rem;
-	font-family: $headers-font;
-}
-
-.text-2xl {
-	font-family: $subheader-font;
-	font-style: italic;
-}
-
-.text-3xl {
-	font-size: 3rem;
-	line-height: 2rem;
-	font-family: $headers-font;
-}
-
-.font-bold {
-	font-weight: 700;
-}
-
-.text-accent {
-	color: rgb(110, 108, 110);
-}
-
-.text-sm {
-	font-size: 1.2rem;
-}
-
-.text-md {
-	font-size: 1.6rem;
-}
