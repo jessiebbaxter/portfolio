@@ -1,18 +1,44 @@
-<div class="container">
-	<div class="header-container">
-		<h1 class="text-4xl font-bold mb-4">UI Kit</h1>
-		<h2 class="text-2xl pr-lg pr-xlg">Component and layouts for you to build on.</h2>
-		<%= link_to "Coming soon", "#", class: "text-md text-brand" %>
-		<div class="hero-image">
-			<img src="https://www.dejan.works/work/days/img/Days.png" alt="">
-		</div>
-	</div>
-	<div class="project-details-container pl-lg">
-		<h3 class="text-3xl font-bold mb-3">Why</h3>
-		<p class="text-sm mb-5">A way for me to practice my front-end skills to design molecules for future development.</p>
-		<h3 class="text-3xl font-bold mb-3">How</h3>
-		<p class="text-sm mb-5">HTML, CSS, JavaScript, Ruby on Rails, Github, Heroku, PostgreSQL, Google Analytics, Algolia</p>
-		<h3 class="text-3xl font-bold mb-3">What</h3>
-		<p class="text-sm mb-5">This is where I will talk about the result</p>
-	</div>
+<div class="flex-shrink-0 px-3 pb-3 bg-white" style="width: 280px;">
+  <ul class="list-unstyled ps-0">
+  	<li class="border-top my-3"></li>  
+    <li class="mb-1">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+        Home
+      </button>
+      <div class="collapse show" id="home-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a href="#" class="link-dark rounded">Overview</a></li>
+          <li><a href="#" class="link-dark rounded">Updates</a></li>
+          <li><a href="#" class="link-dark rounded">Reports</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mb-1">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+        Dashboard
+      </button>
+      <div class="collapse" id="dashboard-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a href="#" class="link-dark rounded">Overview</a></li>
+          <li><a href="#" class="link-dark rounded">Weekly</a></li>
+          <li><a href="#" class="link-dark rounded">Monthly</a></li>
+          <li><a href="#" class="link-dark rounded">Annually</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mb-1">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+        Orders
+      </button>
+      <div class="collapse" id="orders-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a href="#" class="link-dark rounded">New</a></li>
+          <li><a href="#" class="link-dark rounded">Processed</a></li>
+          <li><a href="#" class="link-dark rounded">Shipped</a></li>
+          <li><a href="#" class="link-dark rounded">Returned</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="border-top my-3"></li>    
+  </ul>
 </div>
