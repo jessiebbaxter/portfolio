@@ -6,9 +6,54 @@
     <div class="">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="btn btn-ghost" href="#">Say hi!</a>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-ghost" data-bs-toggle="modal" data-bs-target="#contactModal">Say hi!</button>
         </li>
       </ul>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title font-bold" id="contactModalLabel">Looking forward to connecting!</h4>
+        <button type="button" class="btn btn-x" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <%= form_with url: messages_path, local: true do |form| %>
+        <div class="modal-body">
+          <h5 class="font-bold">Email me at:</h5>
+          <p class="mb-5">jessie.baxter29@gmail.com</p>
+          <h5 class="font-bold">Or send me a message directly:</h5>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group mb-2">
+                <%= form.label :name, class: 'control-label' %>
+                <%= form.text_field :name, class: 'form-control', required: true %>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group mb-2">
+                <%= form.label :email_address, class: 'control-label' %>
+                <%= form.text_field :email, class: 'form-control', required: true %>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="form-group mb-2">
+                <%= form.label :body, class: 'control-label' %>
+                <%= form.text_area :body, class: 'form-control', required: true %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-exit" data-bs-dismiss="modal">Close</button>
+          <%= form.submit "Send message", class: 'btn btn-ghost' %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>

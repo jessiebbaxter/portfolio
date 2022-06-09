@@ -1,13 +1,43 @@
 .btn-ghost {
-  color: #2FFBEF;
-  border: 1.5px solid #2FFBEF;
+  color: #28e0d4;
+  border: 2px solid #28e0d4;
+}
+
+.btn-ghost:hover {
+  color: white;
+  background-color: #28e0d4;
+}
+
+.btn-exit {
+  color: white;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-exit:hover {
+  color: #6c757d;
+  border: 2px solid #6c757d;
+  background-color: transparent;
+}
+
+.btn-x {
+  font-size: 1.3em;
+  color: #28e0d4;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.btn-x:hover {
+  color: #26d3c8;
+}
+
+.btn-ghost, .btn-exit {
   padding: 8px 24px;
   border-radius: 50px;
   opacity: 0.8;
   transition: opacity 0.3s ease;
 }
 
-.btn-ghost:hover {
+.btn-ghost:hover, .btn-exit:hover, .btn-x:hover {
   opacity: 1;
-  color: #2FFBEF;
 }
