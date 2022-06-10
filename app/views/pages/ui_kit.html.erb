@@ -26,18 +26,51 @@
     <h1 class="text-4xl font-bold mb-4">Components</h1>
     <p class="text-sm">Dolor sit eu enim qui quis elit fugiat irure in aute. Adipisicing aute cupidatat dolor laborum quis tempor consectetur anim minim aute.</p>
     <section id="alert">
-      <h2 class="text-2xl mb-4">Alert</h2>
-      <div class="flash flash-success alert alert-dismissible fade show" role="alert">
-        <span><strong>Yay!</strong> 🎉 you successfully signed in to our service.</span>
-        <a data-bs-dismiss="alert" aria-label="Close">
-          <i class="fas fa-times"></i>
-        </a>
+      <h2 class="text-2xl">Alert</h2>
+      <div class="element-preview">
+        <div class="flash flash-success alert alert-dismissible fade show" role="alert">
+          <span><strong>Yay!</strong> 🎉 you successfully signed in to our service.</span>
+          <a data-bs-dismiss="alert" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
+        <div class="flash flash-danger alert alert-dismissible fade show" role="alert">
+          <span><strong>Oops!</strong> 😱 a problem has occurred while processing your booking.</span>
+          <a data-bs-dismiss="alert" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
       </div>
-      <div class="flash flash-danger alert alert-dismissible fade show" role="alert">
-        <span><strong>Oops!</strong> 😱 a problem has occurred while processing your booking.</span>
-        <a data-bs-dismiss="alert" aria-label="Close">
-          <i class="fas fa-times"></i>
-        </a>
+      <div class="card-code">
+        <div class="card-code-header">
+          
+        </div>
+        <div class="card-code-body">
+          <pre>
+            <code>
+&lt;div class="flash flash-success alert alert-dismissible fade show" role="alert"&gt;
+  &lt;span&gt;&lt;strong&gt;Yay!&lt;/strong&gt; 🎉 you successfully signed in to our service.&lt;/span&gt;
+  &lt;a data-bs-dismiss="alert" aria-label="Close"&gt;
+    &lt;i class="fas fa-times"&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class="flash flash-warning alert alert-dismissible fade show" role="alert"&gt;
+  &lt;span&gt;&lt;strong&gt;Mmh&lt;/strong&gt; 🤔 seems like you don't have &lt;a href="#"&gt;profile picture&lt;/a&gt; yet.&lt;/span&gt;
+  &lt;a data-bs-dismiss="alert" aria-label="Close"&gt;
+    &lt;i class="fas fa-times"&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class="flash flash-danger alert alert-dismissible fade show" role="alert"&gt;
+  &lt;span&gt;&lt;strong&gt;Oops!&lt;/strong&gt; 😱 a problem has occurred while processing your booking.&lt;/span&gt;
+  &lt;a data-bs-dismiss="alert" aria-label="Close"&gt;
+    &lt;i class="fas fa-times"&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+        </div>
       </div>
     </section>
   </div>
