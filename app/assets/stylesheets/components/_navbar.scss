@@ -1,5 +1,6 @@
 .navbar-custom {
   justify-content: space-between;
+  height: $navbar-height;
 }
 
 .navbar-custom .navbar-collapse {
@@ -10,10 +11,11 @@
   width: 40px;
 }
 
-.navbar-bg-white {
-  background: white;
+.navbar-bg-trans {
+  background: transparent;
 }
 
-.navbar-bg-grey {
+.navbar-ui {
   background: #F4F4F4;
+  margin-top: $navbar-height;
 }

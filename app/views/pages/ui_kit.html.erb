@@ -7,7 +7,7 @@
   </ul>
 </div>
 <!-- Top nav for xs & sm screens -->
-<div class="navbar navbar-expand-md navbar-light navbar-custom navbar-bg-grey d-md-none">
+<div class="navbar navbar-expand-md navbar-light navbar-ui d-md-none py-2 px-3">
   <div class="container-fluid">
     <div></div>
     <!-- Hamburger menu -->
@@ -21,9 +21,24 @@
     </div>
   </div>
 </div>
-<section class="main-content py-4" id="top">
+<section class="main-content py-5" id="top">
   <div class="container">
-    <h1>Components</h1>
-    <p>Dolor sit eu enim qui quis elit fugiat irure in aute. Adipisicing aute cupidatat dolor laborum quis tempor consectetur anim minim aute.</p>
+    <h1 class="text-4xl font-bold mb-4">Components</h1>
+    <p class="text-sm">Dolor sit eu enim qui quis elit fugiat irure in aute. Adipisicing aute cupidatat dolor laborum quis tempor consectetur anim minim aute.</p>
+    <section id="alert">
+      <h2 class="text-2xl mb-4">Alert</h2>
+      <div class="flash flash-success alert alert-dismissible fade show" role="alert">
+        <span><strong>Yay!</strong> 🎉 you successfully signed in to our service.</span>
+        <a data-bs-dismiss="alert" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+      <div class="flash flash-danger alert alert-dismissible fade show" role="alert">
+        <span><strong>Oops!</strong> 😱 a problem has occurred while processing your booking.</span>
+        <a data-bs-dismiss="alert" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+    </section>
   </div>
 </section>
