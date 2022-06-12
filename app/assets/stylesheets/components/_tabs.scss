@@ -1,0 +1,15 @@
+.nav-tabs {
+  width: fit-content;
+  border: 3px solid white;
+  border-radius: 50px;
+  background: white;
+  .nav-link {
+    border: none;
+    color: $gray;
+  }
+  .nav-link.active {
+    border: 2px solid $brand;
+    border-radius: 50px;
+    color: $brand;
+  }
+}
