@@ -28,27 +28,45 @@
     <section id="alert">
       <h2 class="text-2xl">Alert</h2>
       <div class="element-preview">
-        <div class="flash flash-success alert alert-dismissible fade show" role="alert">
-          <span><strong>Yay!</strong> 🎉 you successfully signed in to our service.</span>
+        <div class="alert-jb alert-jb-info alert alert-dismissible fade show" role="alert">
+          <div class="content">
+            <div class="line"></div>
+            <i class="icon fas fa-info-circle"></i>
+            <div class="details">
+              <h5>Did you know?</h5>
+              <p>Here is something that you might like to know.</p>
+            </div>
+          </div>
           <a data-bs-dismiss="alert" aria-label="Close">
-            <i class="fas fa-times"></i>
+            <i class="dismiss fas fa-times"></i>
           </a>
         </div>
-
-        <div class="flash flash-warning alert alert-dismissible fade show" role="alert">
-          <span><strong>Mmh</strong> 🤔 seems like you don't have <a href="#">profile picture</a> yet.</span>
+        <div class="alert-jb alert-jb-warning alert alert-dismissible fade show" role="alert">
+          <div class="content">
+            <div class="line"></div>
+            <i class="icon fas fa-exclamation-circle"></i>
+            <div class="details">
+              <h5>Uh oh, something went wrong</h5>
+              <p>Sorry! There was a problem with your request.</p>
+            </div>
+          </div>
           <a data-bs-dismiss="alert" aria-label="Close">
-            <i class="fas fa-times"></i>
+            <i class="dismiss fas fa-times"></i>
           </a>
         </div>
-
-        <div class="flash flash-danger alert alert-dismissible fade show" role="alert">
-          <span><strong>Oops!</strong> 😱 a problem has occurred while processing your booking.</span>
+        <div class="alert-jb alert-jb-success alert alert-dismissible fade show" role="alert">
+          <div class="content">
+            <div class="line"></div>
+            <i class="icon fas fa-check-circle"></i>
+            <div class="details">
+              <h5>Yay! Everything worked!</h5>
+              <p>Congrats on the internet loading your request.</p>
+            </div>
+          </div>
           <a data-bs-dismiss="alert" aria-label="Close">
-            <i class="fas fa-times"></i>
+            <i class="dismiss fas fa-times"></i>
           </a>
         </div>
-      </div>
       <div class="card-code">
         <div class="card-code-header">
           <nav>
@@ -61,53 +79,111 @@
             <div class="tab-pane fade show active" id="nav-html" role="tabpanel" aria-labelledby="nav-html-tab">
               <pre>
                 <code class="language-html">
-&lt;div class="flash flash-success alert alert-dismissible fade show" role="alert"&gt;
-  &lt;span&gt;&lt;strong&gt;Yay!&lt;/strong&gt; 🎉 you successfully signed in to our service.&lt;/span&gt;
-  &lt;a data-bs-dismiss="alert" aria-label="Close"&gt;
-    &lt;i class="fas fa-times"&gt;&lt;/i&gt;
-  &lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class="flash flash-warning alert alert-dismissible fade show" role="alert"&gt;
-  &lt;span&gt;&lt;strong&gt;Mmh&lt;/strong&gt; 🤔 seems like you don't have &lt;a href="#"&gt;profile picture&lt;/a&gt; yet.&lt;/span&gt;
-  &lt;a data-bs-dismiss="alert" aria-label="Close"&gt;
-    &lt;i class="fas fa-times"&gt;&lt;/i&gt;
-  &lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class="flash flash-danger alert alert-dismissible fade show" role="alert"&gt;
-  &lt;span&gt;&lt;strong&gt;Oops!&lt;/strong&gt; 😱 a problem has occurred while processing your booking.&lt;/span&gt;
-  &lt;a data-bs-dismiss="alert" aria-label="Close"&gt;
-    &lt;i class="fas fa-times"&gt;&lt;/i&gt;
-  &lt;/a&gt;
-&lt;/div&gt;
+&lt;div class="alert-jb alert-jb-info alert alert-dismissible fade show" role="alert">
+  &lt;div class="content">
+    &lt;div class="line">&lt;/div>
+    &lt;i class="icon fas fa-info-circle">&lt;/i>
+    &lt;div class="details">
+      &lt;h5>Did you know?&lt;/h5>
+      &lt;p>Here is something that you might like to know.&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  &lt;a data-bs-dismiss="alert" aria-label="Close">
+    &lt;i class="dismiss fas fa-times">&lt;/i>
+  &lt;/a>
+&lt;/div>
+&lt;div class="alert-jb alert-jb-warning alert alert-dismissible fade show" role="alert">
+  &lt;div class="content">
+    &lt;div class="line">&lt;/div>
+    &lt;i class="icon fas fa-exclamation-circle">&lt;/i>
+    &lt;div class="details">
+      &lt;h5>Uh oh, something went wrong&lt;/h5>
+      &lt;p>Sorry! There was a problem with your request.&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  &lt;a data-bs-dismiss="alert" aria-label="Close">
+    &lt;i class="dismiss fas fa-times">&lt;/i>
+  &lt;/a>
+&lt;/div>
+&lt;div class="alert-jb alert-jb-success alert alert-dismissible fade show" role="alert">
+  &lt;div class="content">
+    &lt;div class="line">&lt;/div>
+    &lt;i class="icon fas fa-check-circle">&lt;/i>
+    &lt;div class="details">
+      &lt;h5>Yay! Everything worked!&lt;/h5>
+      &lt;p>Congrats on the internet loading your request.&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  &lt;a data-bs-dismiss="alert" aria-label="Close">
+    &lt;i class="dismiss fas fa-times">&lt;/i>
+  &lt;/a>
+&lt;/div>
                 </code>
               </pre>
             </div>
             <div class="tab-pane fade" id="nav-css" role="tabpanel" aria-labelledby="nav-css-tab">
               <pre>
                 <code class="language-css">
-.flash {
-  padding: 16px 24px;
+.alert-jb {
   display: flex;
+  margin: 10px;
+  padding: 15px;
   justify-content: space-between;
   align-items: center;
   background: white;
-  box-shadow: 0 0 8px rgba(0,0,0,0.2);
-  border-radius: 4px;
-  margin: 8px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.12);
+  border-radius: 5px;
 }
 
-.flash-success {
-  border: 2px solid #1EDD88;
+.alert-jb .content {
+  display: flex;
+  align-items: center;
 }
 
-.flash-warning {
-  border: 2px solid #FFC65A;
+.alert-jb h5, .alert-jb p {
+  margin-bottom: 0px;
 }
 
-.flash-danger {
-  border: 2px solid #FD1015;
+.alert-jb .dismiss {
+  padding-right: 10px;
+}
+
+.alert-jb p, .alert-jb .dismiss {
+  color: #94959A;
+}
+
+.alert-jb .line {
+  height: 60px;
+  border-radius: 5px;
+}
+
+.alert-jb .icon {
+  font-size: 30px;
+  padding: 0 20px;
+}
+
+.alert-jb-info .line {
+  border-left: 5px solid #037BC3;
+}
+
+.alert-jb-info .icon {
+  color: #037BC3;
+}
+
+.alert-jb-warning .line {
+  border-left: 5px solid #F0A92C;
+}
+
+.alert-jb-warning .icon {
+  color: #F0A92C;
+}
+
+.alert-jb-success .line {
+  border-left: 5px solid #20A779;
+}
+
+.alert-jb-success .icon {
+  color: #20A779;
 }
                 </code>
               </pre>

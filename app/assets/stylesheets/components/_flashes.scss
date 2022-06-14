@@ -1,22 +1,61 @@
-.flash {
-  padding: 16px 24px;
+.alert-jb {
   display: flex;
+  margin: 10px;
+  padding: 15px;
   justify-content: space-between;
   align-items: center;
   background: white;
-  box-shadow: 0 0 8px rgba(0,0,0,0.2);
-  border-radius: 4px;
-  margin: 8px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.12);
+  border-radius: 5px;
 }
 
-.flash-success {
-  border: 2px solid #1EDD88;
+.alert-jb .content {
+  display: flex;
+  align-items: center;
 }
 
-.flash-warning {
-  border: 2px solid #FFC65A;
+.alert-jb h5, .alert-jb p {
+  margin-bottom: 0px;
 }
 
-.flash-danger {
-  border: 2px solid #FD1015;
+.alert-jb .dismiss {
+  padding-right: 10px;
+}
+
+.alert-jb p, .alert-jb .dismiss {
+  color: #94959A;
+}
+
+.alert-jb .line {
+  height: 60px;
+  border-radius: 5px;
+}
+
+.alert-jb .icon {
+  font-size: 30px;
+  padding: 0 20px;
+}
+
+.alert-jb-info .line {
+  border-left: 5px solid #037BC3;
+}
+
+.alert-jb-info .icon {
+  color: #037BC3;
+}
+
+.alert-jb-warning .line {
+  border-left: 5px solid #F0A92C;
+}
+
+.alert-jb-warning .icon {
+  color: #F0A92C;
+}
+
+.alert-jb-success .line {
+  border-left: 5px solid #20A779;
+}
+
+.alert-jb-success .icon {
+  color: #20A779;
 }
