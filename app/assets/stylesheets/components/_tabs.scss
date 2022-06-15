@@ -13,3 +13,24 @@
     color: $brand;
   }
 }
+
+// UI Kit
+.tabs-underlined {
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.tabs-underlined .tab-underlined {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  color: black;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.tabs-underlined .tab-underlined.active {
+  opacity: 1;
+  border-bottom: 3px solid #555555;
+}

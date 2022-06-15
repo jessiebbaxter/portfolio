@@ -1,12 +1,10 @@
-.btn-ghost {
-  color: $brand;
-  border: 2px solid $brand;
-  background-color: white;
+.btn-brand {
+  color: $brand !important;
+  border: 2px solid $brand !important;
 }
 
-.btn-ghost:hover {
-  color: white;
-  background-color: $brand;
+.btn-brand:hover {
+  background-color: $brand !important;
 }
 
 .btn-exit {
@@ -32,13 +30,60 @@
   color: #26d3c8;
 }
 
-.btn-ghost, .btn-exit {
+.btn-exit {
   padding: 8px 24px;
   border-radius: 50px;
   opacity: 0.8;
   transition: opacity 0.3s ease;
 }
 
-.btn-ghost:hover, .btn-exit:hover, .btn-x:hover {
+.btn-brand:hover, .btn-exit:hover, .btn-x:hover {
   opacity: 1;
+}
+
+// UI Kit
+
+.btn-ghost {
+  color: #1EDD88;
+  padding: 8px 24px;
+  border: 2px solid #1EDD88;
+  border-radius: 50px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  background-color: white;
+}
+
+.btn-ghost:hover {
+  color: white;
+  background-color: #1EDD88;
+  opacity: 1
+}
+
+.btn-flat {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.5em 1.1em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 0px;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  color: white;
+  background-color: black;
+}
+
+.btn-gradient {
+  color: white;
+  background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+  border-radius: 7px;
+  padding: 0.5em 1.5em;
+  letter-spacing: 0.8px;
+}
+
+.btn-gradient:hover {
+  color: white;
+  background: linear-gradient(to left, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
 }
