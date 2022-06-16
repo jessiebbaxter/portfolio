@@ -23,10 +23,21 @@
 </div>
 <section class="main-content py-5" id="top">
   <div class="container">
-    <h1 class="text-4xl font-bold mb-4">Components</h1>
-    <p class="text-sm">Dolor sit eu enim qui quis elit fugiat irure in aute. Adipisicing aute cupidatat dolor laborum quis tempor consectetur anim minim aute.</p>
-    <% @elements.each do |element| %>
-      <%= render 'shared/ui_kit_section', element: element %>
+    <!-- Components -->
+    <% if @components.present? %>
+      <h1 class="text-4xl font-bold mb-4">Components</h1>
+      <p class="text-sm">Dolor sit eu enim qui quis elit fugiat irure in aute. Adipisicing aute cupidatat dolor laborum quis tempor consectetur anim minim aute.</p>
+      <% @components.each do |component| %>
+        <%= render 'shared/ui_kit_section', element: component %>
+      <% end %>
+    <% end %>
+    <!-- Layouts -->
+    <% if @layouts.present? %>
+      <h1 class="text-4xl font-bold mt-5 mb-4">Layouts</h1>
+      <p class="text-sm">Dolor sit eu enim qui quis elit fugiat irure in aute. Adipisicing aute cupidatat dolor laborum quis tempor consectetur anim minim aute.</p>
+      <% @layouts.each do |layout| %>
+        <%= render 'shared/ui_kit_section', element: layout %>
+      <% end %>
     <% end %>
     <!-- PLAYGROUND -->
   </div>

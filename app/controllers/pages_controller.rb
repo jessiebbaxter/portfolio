@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def ui_kit
-    @elements = Element.all.order(:name)
+    @components = Element.where(component: true).order(:name)
+    @layouts = Element.where(layout: true).order(:name)
   end
 end
