@@ -16,8 +16,12 @@
 // const imagePath = (name) => images(name, true)
 
 import "bootstrap";
-import Prism from 'prismjs';
+import { initPrism } from '../plugins/init_prism';
 
-document.addEventListener('turbolinks:load', () => {
-  Prism.highlightAll();
-});
+initPrism();
+
+// import Prism from 'prismjs';
+
+// document.addEventListener('turbolinks:load', () => {
+//   Prism.highlightAll();
+// });
