@@ -1,0 +1,50 @@
+.notification {
+	display: flex;
+	align-items: center;
+	padding: 1em;
+	margin-bottom: 0 !important;
+	border-top: 1px solid #F4F4F4;
+	border-left: 3px solid #357BFD;
+}
+
+.notification .notification-content {
+  flex-grow: 1;
+  padding: 0 24px;
+}
+
+.notification .notification-post {
+	width: 56px;
+	border-radius: 0px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	margin-right: 20px;
+}
+
+.notification p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.notification small {
+  color: #999999;
+  font-weight: bold;
+}
+
+.notification .notification-actions {
+  opacity: 0;
+  display: flex;
+  transition: ease .3s;
+}
+
+.notification:hover .notification-actions {
+  opacity: 1;
+}
+
+.notification .notification-actions a {
+  color: #999999;
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+.notification .notification-actions a:hover {
+  color: #555555;
+}

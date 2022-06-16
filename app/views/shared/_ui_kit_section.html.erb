@@ -7,19 +7,19 @@
     <div class="card-code-header">
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-html-tab" data-bs-toggle="tab" data-bs-target='#<%= element.name %>-html' type="button" role="tab" aria-controls="nav-html" aria-selected="true">HTML</button>
-          <button class="nav-link" id="nav-css-tab" data-bs-toggle="tab" data-bs-target='#<%= element.name %>-css' type="button" role="tab" aria-controls="nav-css" aria-selected="false">CSS</button>
+          <button class="nav-link active" id="nav-html-tab" data-bs-toggle="tab" data-bs-target='#<%= element.name.parameterize %>-html' type="button" role="tab" aria-controls="nav-html" aria-selected="true">HTML</button>
+          <button class="nav-link" id="nav-css-tab" data-bs-toggle="tab" data-bs-target='#<%= element.name.parameterize %>-css' type="button" role="tab" aria-controls="nav-css" aria-selected="false">CSS</button>
         </div>
       </nav>
       <div class="card-code-body tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id='<%= element.name %>-html' role="tabpanel" aria-labelledby="nav-html-tab">
+        <div class="tab-pane fade show active" id='<%= element.name.parameterize %>-html' role="tabpanel" aria-labelledby="nav-html-tab">
           <pre>
             <code class="language-html">
 <%= element.html %>
             </code>
           </pre>
         </div>
-        <div class="tab-pane fade" id='<%= element.name %>-css' role="tabpanel" aria-labelledby="nav-css-tab">
+        <div class="tab-pane fade" id='<%= element.name.parameterize %>-css' role="tabpanel" aria-labelledby="nav-css-tab">
           <pre>
             <code class="language-css">
 <%= element.css %>

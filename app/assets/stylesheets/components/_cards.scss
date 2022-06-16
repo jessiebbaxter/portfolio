@@ -8,3 +8,63 @@
     margin: 0 0.5rem 1rem 0.5rem;
     border: 1px solid #E7E7E7;
 }
+
+// UI Kit
+
+.card-product {
+  border: 1px solid #E7E7E7;
+  border-radius: 2px;
+}
+
+.card-product-image {
+  position: relative;
+  text-align: center;
+  background: white;
+  height: 250px;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.card-product-image img {
+  position: absolute;
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card-product-image .overlay {
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  background: #E67A00;
+  padding: 5px 10px;
+  top: 0;
+  left: 0;
+}
+
+.card-product-details {
+  padding: 10px;
+}
+
+.card-product-details .name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card-product-details .price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-product-details p {
+  color: #565959;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+
+.card-product-details small {
+  font-size: 14px;
+}
