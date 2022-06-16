@@ -15,8 +15,15 @@
 @import "layouts/index";
 
 body {
+  position: relative;
   min-height: 100vh;
   min-height: -webkit-fill-available;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 100px; // Footer height
 }
 
 html {
