@@ -17,11 +17,7 @@
 
 import "bootstrap";
 import { initPrism } from '../plugins/init_prism';
+import { initAnimateScrollTo } from '../plugins/init_animated_scroll_to';
 
 initPrism();
-
-// import Prism from 'prismjs';
-
-// document.addEventListener('turbolinks:load', () => {
-//   Prism.highlightAll();
-// });
+initAnimateScrollTo();

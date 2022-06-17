@@ -27,6 +27,7 @@ body::after {
 }
 
 html {
+  scroll-behavior: initial !important;
   height: -webkit-fill-available;
 }
 
