@@ -6,10 +6,13 @@ const initAnimateScrollTo = () => {
 		if (sidebar != null) {
 			sidebar.addEventListener("click", (event) => {
 			  event.preventDefault();
-			  const href = event.target.hash
-			  const target = document.getElementById(href.replace('#',''));
-			  animateScrollTo(target, { verticalOffset: -10 } );
-			  window.history.pushState(null, null, href);
+			  const isComponentOrLayout = !event.target.classList.value.includes('btn-toggle');
+			  if (isComponentOrLayout) {
+				  const href = event.target.hash
+				  const target = document.getElementById(href.replace('#',''));
+				  animateScrollTo(target, { verticalOffset: -10 } );
+				  window.history.pushState(null, null, href);
+			  }
 			});
 		}
 	});
