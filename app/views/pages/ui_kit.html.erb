@@ -26,15 +26,14 @@
     <!-- Components -->
     <% if @components.present? %>
       <h1 class="text-4xl font-bold mb-4">Components</h1>
-      <p class="text-sm">Dolor sit eu enim qui quis elit fugiat irure in aute. Adipisicing aute cupidatat dolor laborum quis tempor consectetur anim minim aute.</p>
+      <p class="text-sm">Most of the components have a dependency on <%= link_to "Bootstrap (5.1)", "https://getbootstrap.com/", target: "_blank" %> & <%= link_to "Fontawesome", "https://origin.fontawesome.com/", target: "_blank" %>, so please make sure you have the libraries in your project.</p>
       <% @components.each do |component| %>
         <%= render 'shared/ui_kit_section', element: component %>
       <% end %>
     <% end %>
     <!-- Layouts -->
     <% if @layouts.present? %>
-      <h1 class="text-4xl font-bold mt-5 mb-4">Layouts</h1>
-      <p class="text-sm">Dolor sit eu enim qui quis elit fugiat irure in aute. Adipisicing aute cupidatat dolor laborum quis tempor consectetur anim minim aute.</p>
+      <h1 class="text-4xl font-bold mt-5 mb-5">Layouts</h1>
       <% @layouts.each do |layout| %>
         <%= render 'shared/ui_kit_section', element: layout %>
       <% end %>
