@@ -27,8 +27,13 @@
 	color: $brand;
 }
 
-.text-sm {
+.text-sm, .text-sm-accent {
 	font-size: 1.2rem;
+}
+
+.text-sm-accent {
+	font-family: $subheader-font;
+	font-style: italic;
 }
 
 .text-md {
