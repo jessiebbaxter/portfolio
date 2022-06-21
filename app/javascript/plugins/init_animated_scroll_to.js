@@ -2,15 +2,15 @@ import animateScrollTo from 'animated-scroll-to';
 
 const initAnimateScrollTo = () => {
 	document.addEventListener('turbolinks:load', () => {
-		const sidebar = document.getElementById("sidebar");
-		if (sidebar != null) {
-			sidebar.addEventListener("click", (event) => {
-			  event.preventDefault();
-			  const isComponentOrLayout = !event.target.classList.value.includes('btn-toggle');
-			  if (isComponentOrLayout) {
+		const element = document.getElementById("ui-kit-nav");
+		if (element != null) {
+			element.addEventListener("click", (event) => {
+				const isUiKitElement = event.target.classList.value.includes('ui-kit-element');
+			  if (isUiKitElement) {
+			  	event.preventDefault();
 				  const href = event.target.hash
 				  const target = document.getElementById(href.replace('#',''));
-				  animateScrollTo(target, { verticalOffset: -10 } );
+				  animateScrollTo(target, { verticalOffset: -60 } );
 				  window.history.pushState(null, null, href);
 			  }
 			});
