@@ -1,6 +1,8 @@
 .navbar-custom {
   justify-content: space-between;
   height: $navbar-height;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .navbar-custom .navbar-collapse {
@@ -18,4 +20,11 @@
 .navbar-ui {
   background: #F4F4F4;
   margin-top: $navbar-height;
+}
+
+// X-Small and Small devices 
+@media (max-width: 576px) {
+  .navbar-custom {
+    padding: 0;
+  }
 }
