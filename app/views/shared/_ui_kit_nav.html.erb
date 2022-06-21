@@ -1,10 +1,10 @@
 <div id="sidebar">
   <% if @components.present? %>
     <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#component-collapse" aria-expanded="true">
         Components
       </button>
-      <div class="collapse show" id="home-collapse">
+      <div class="collapse show" id="component-collapse">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
           <% @components.each do |component| %>
             <li><a href='#<%= component.name.parameterize %>' class="link-dark rounded"><%= component.name.capitalize %></a></li>
@@ -15,10 +15,10 @@
   <% end %>
   <% if @layouts.present? %>
     <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false">
         Layouts
       </button>
-      <div class="collapse" id="dashboard-collapse">
+      <div class="collapse" id="layout-collapse">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
           <% @layouts.each do |layout| %>
             <li><a href='#<%= layout.name.parameterize %>' class="link-dark rounded"><%= layout.name.capitalize %></a></li>
