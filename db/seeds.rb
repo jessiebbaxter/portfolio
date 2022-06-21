@@ -28,7 +28,7 @@ Element.create!(
 	name: "banner",
 	component: true,
 	html: "<div class=\"banner carousel slide\" data-bs-ride=\"carousel\">\n  <div class=\"carousel-inner\">\n    <div class=\"carousel-item active\">\n      <img class=\"d-block w-100\" src=\"https://res.cloudinary.com/dswcvx3gy/image/upload/v1655245394/banner-1.jpg\" alt=\"First slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block w-100\" src=\"https://res.cloudinary.com/dswcvx3gy/image/upload/v1655245403/banner-2.jpg\" alt=\"Second slide\">\n    </div>\n  </div>\n  <div class=\"banner-overlay\">\n    <h1>Let's talk winter haircare!</h1>\n    <h3>Nourish with treatments, hair oils and don't forget your scalp!</h3>\n    <button class=\"btn btn-flat\">Shop Haircare</button>\n  </div>\n</div>",
-	css: ".banner {\n  position: relative;\n  text-align: center;\n  padding: 0.5em;\n}\n\n.banner-overlay {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  padding: 0 10%;\n  color: white;\n  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n  transform: translate(-50%, -50%);\n}\n\n.banner-overlay h1 {\n  font-size: 40px;\n  font-weight: bold;\n}\n\n.banner-overlay h3 {\n  font-size: 16px;\n  font-style: italic;\n  margin-bottom: 0.5em;\n}",
+	css: ".banner {\n  position: relative;\n  text-align: center;\n  padding: 0.5em;\n}\n\n.banner-overlay {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  color: white;\n  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n  transform: translate(-50%, -50%);\n}\n\n.banner-overlay h1 {\n  font-size: 40px;\n  font-weight: bold;\n}\n\n.banner-overlay h3 {\n  font-size: 16px;\n  font-style: italic;\n  margin-bottom: 0.5em;\n}",
 	)
 
 puts "Finished creating banner..."
