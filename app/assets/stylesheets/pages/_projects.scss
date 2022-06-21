@@ -28,3 +28,9 @@
 		margin-top: $navbar-height;
 	}
 }
+
+@media (max-width: 500px) {
+	#button .btn {
+		margin-top: 6px;
+	}
+}
