@@ -42,3 +42,10 @@
 .text-md {
 	font-size: 1.6rem;
 }
+
+// X-Small and Small devices 
+@media (max-width: 576px) {
+  .text-4xl {
+    font-size: 3rem;
+  }
+}
