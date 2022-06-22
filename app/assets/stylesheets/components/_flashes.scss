@@ -1,4 +1,9 @@
-.alert-jb {
+
+
+
+// UI Kit
+
+.flash {
   display: flex;
   margin: 10px;
   padding: 15px;
@@ -9,53 +14,53 @@
   border-radius: 5px;
 }
 
-.alert-jb .content {
+.flash .content {
   display: flex;
   align-items: center;
 }
 
-.alert-jb h5, .alert-jb p {
+.flash h5, .flash p {
   margin-bottom: 0px;
 }
 
-.alert-jb .dismiss {
+.flash .dismiss {
   padding-right: 10px;
 }
 
-.alert-jb p, .alert-jb .dismiss {
+.flash p, .flash .dismiss {
   color: #94959A;
 }
 
-.alert-jb .line {
+.flash .line {
   height: 60px;
   border-radius: 5px;
 }
 
-.alert-jb .icon {
+.flash .icon {
   font-size: 30px;
   padding: 0 20px;
 }
 
-.alert-jb-info .line {
+.flash-info .line {
   border-left: 5px solid #037BC3;
 }
 
-.alert-jb-info .icon {
+.flash-info .icon {
   color: #037BC3;
 }
 
-.alert-jb-warning .line {
+.flash-warning .line {
   border-left: 5px solid #F0A92C;
 }
 
-.alert-jb-warning .icon {
+.flash-warning .icon {
   color: #F0A92C;
 }
 
-.alert-jb-success .line {
+.flash-success .line {
   border-left: 5px solid #20A779;
 }
 
-.alert-jb-success .icon {
+.flash-success .icon {
   color: #20A779;
 }
