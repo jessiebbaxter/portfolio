@@ -16,15 +16,11 @@
 
 .flash .content {
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 
 .flash h5, .flash p {
   margin-bottom: 0px;
-}
-
-.flash .dismiss {
-  padding-right: 10px;
 }
 
 .flash p, .flash .dismiss {
@@ -32,13 +28,14 @@
 }
 
 .flash .line {
-  height: 60px;
   border-radius: 5px;
 }
 
 .flash .icon {
   font-size: 30px;
   padding: 0 20px;
+  display: flex;
+  align-items: center;
 }
 
 .flash-info .line {
