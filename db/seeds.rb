@@ -1,3 +1,9 @@
+puts "Destroying all Elements..."
+
+Element.destroy_all
+
+puts "Finished destroying all Elements..."
+
 puts "Creating elements for UI kit..."
 
 puts "Creating alert..."
