@@ -24,37 +24,17 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <%= form_with url: messages_path, local: true do |form| %>
-        <div class="modal-body">
-          <h5 class="mb-3 font-bold">Email me at</h5>
-          <p class="mb-5">jessie.baxter29@gmail.com</p>
-          <h5 class="mb-3 font-bold">Or send me a message directly</h5>
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <div class="form-group mb-2">
-                <%= form.label :name, class: 'control-label' %>
-                <%= form.text_field :name, class: 'form-control', required: true %>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <div class="form-group mb-2">
-                <%= form.label :email_address, class: 'control-label' %>
-                <%= form.text_field :email, class: 'form-control', required: true %>
-              </div>
-            </div>
-            <div class="col-xs-12">
-              <div class="form-group mb-2">
-                <%= form.label :message, class: 'control-label' %>
-                <%= form.text_area :body, class: 'form-control', required: true %>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-exit" data-bs-dismiss="modal">Close</button>
-          <%= form.submit "Send message", class: 'btn btn-ghost btn-brand' %>
-        </div>
-      <% end %>
+      <div class="modal-body">
+        <h5 class="mb-3 font-bold">Email me at</h5>
+        <p class="mb-4">jessie.baxter29@gmail.com</p>
+        <h5 class="mb-3 font-bold">Or reach out on your preferred platform</h5>
+        <%= link_to "LinkedIn", "https://www.linkedin.com/in/jessiebbaxter/", target: "_blank", class: "text-brand d-block pb-2" %>
+        <%= link_to "Twitter", "https://twitter.com/jessiebbaxter", target: "_blank", class: "text-brand d-block pb-2" %>
+        <%= link_to "Instagram", "https://www.instagram.com/jessiebbaxter/", target: "_blank", class: "text-brand d-block" %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-exit" data-bs-dismiss="modal">Close</button>
+      </div>
     </div>
   </div>
 </div>
